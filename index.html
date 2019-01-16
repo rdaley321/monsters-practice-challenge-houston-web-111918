@@ -6,7 +6,15 @@
   </head>
   <body>
     <h1>Monstr Inc.</h1>
-    <div id='create-monster'></div>
+    <div id='create-monster'>
+      <form action="/monsters" method="POST">
+        <input type="text" name="name" placeholder="name" value="">
+        <input type="text" name="age" placeholder="age" value="">
+        <input type="text" name="description" placeholder="description" value="">
+        <input type="submit" name="submit" value="submit">
+      </form>
+    </div>
+    <br>
     <div id='monster-container'></div>
     <button id="back"><=</button>
     <button id="forward">=></button>
